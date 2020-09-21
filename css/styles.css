@@ -1,1 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto; /*центрирование*/
+}
+
+body {
+    font-family: "Lato";
+}
+
+/* Header classes*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+} /*делаем липкий хедер*/
+
+.header_wrapper {
+    display: flex; /*элементы в строку*/
+    flex-wrap: wrap; /*перенос элементов*/
+    align-items: flex-end; /*расположить по нижней части*/
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-right: 82px;
+}
+
+.header_item:last-child{
+    margin-right: 0px;
+}
+
+.header_link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active {
+    opacity: 75%;
+}
+
+/* Intro classes*/
+
+.intro {
+    height: 100vh;
+    background: url(/img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+}
